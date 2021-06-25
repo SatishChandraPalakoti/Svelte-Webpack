@@ -62,3 +62,6 @@ module.exports ={
         hot: true
     }
 }
+
+
+//https://dev.to/rogeliosamuel621/svelte-with-webpack-5-and-babel-1b03
