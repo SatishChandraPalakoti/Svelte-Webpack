@@ -4,7 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "http-server ./dist/ --cors -o -c-1 proxy",
+    "build": "webpack --mode production",
+    "build-dev": "webpack --mode development --config ./webpack.config.js",
+    "dev": "webpack serve --open chrome"
   },
   "keywords": [],
   "author": "",
@@ -14,8 +18,10 @@
     "@babel/polyfill": "^7.12.1",
     "@babel/preset-env": "^7.14.7",
     "babel-loader": "^8.2.2",
+    "style-loader": "^3.2.1",
     "svelte": "^3.38.3",
-    "svelte-loader": "^3.1.2"
+    "svelte-loader": "^3.1.2",
+    "svelte-preprocess": "^4.7.4"
   },
   "devDependencies": {
     "css-loader": "^5.2.6",
